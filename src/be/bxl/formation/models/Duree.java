@@ -19,4 +19,26 @@ public class Duree {
         this.totalSeconde = (jour * 86400) + (heure * 3600) + (minute * 60) + seconde;
     }
     //endregion
+
+    //region Getters
+    public int getTotalSeconde() {
+        return totalSeconde;
+    }
+
+    public int getJour() {
+        return totalSeconde/86400;
+    }
+
+    public int getHeure() {
+        return (totalSeconde/3600) % 24;
+    }
+
+    public int getMinute() {
+        return (totalSeconde/60) % 60;
+    }
+
+    public int getSeconde() {
+        return totalSeconde % 60;
+    }
+    //endregion
 }

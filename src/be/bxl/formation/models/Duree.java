@@ -6,7 +6,7 @@ public class Duree {
     private int totalSeconde;
     //endregion
 
-    //region
+    //region Constructeur
     public Duree(int nbSeconde) {
         this.setTotalSeconde(nbSeconde);
     }

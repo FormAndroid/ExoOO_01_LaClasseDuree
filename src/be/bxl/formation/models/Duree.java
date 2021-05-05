@@ -12,7 +12,7 @@ public class Duree {
     }
 
     public Duree(int jour, int heure, int minute, int seconde) {
-        if(jour < 0 || heure >= 24 || heure < 0 || minute >= 60 || minute < 0 || seconde >= 60 || seconde < 0) {
+        if(jour < 0 || heure < 0 || minute < 0 || seconde < 0) {
             throw new IllegalArgumentException("Durée invalide !");
         }
 
